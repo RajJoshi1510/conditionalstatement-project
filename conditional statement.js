@@ -41,7 +41,7 @@ while (keepOrdering)
   } 
   else 
   {
-    console.log("Invalid choice! select from 1 to 5.");
+    alert("Invalid choice! Please enter value  from 1 to 5.");
     continue;        
   }
 
@@ -49,8 +49,9 @@ while (keepOrdering)
   let total = price * count;
   bill = bill + total;
 
+  alert(`You ordered ${count} ${name}. Cost: ₹${total}\nCurrent total bill: ₹${bill}`);
   console.log(`You ordered ${count} ${name}. Cost: ₹${total}`);
-  console.log("Current total bill: Rs" + bill);
+  console.log("Current total bill: Rs." + bill);
 
   let more = prompt("Do you want to order more? (yes/no)").toLowerCase();
   if (more != "yes") 
@@ -61,4 +62,5 @@ while (keepOrdering)
 
 console.log("--------------------");
 console.log("Thank you for ordering!");
-console.log("Your final bill is ₹" + bill);
+console.log("Your final bill is Rs." + bill);
+alert("Thank you for ordering!\nYour final bill is Rs." + bill);
