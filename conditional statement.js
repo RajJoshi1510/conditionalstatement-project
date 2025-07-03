@@ -50,7 +50,7 @@ while (keepOrdering)
   bill = bill + total;
 
   console.log(`You ordered ${count} ${name}. Cost: ₹${total}`);
-  console.log("Current total bill: ₹" + bill);
+  console.log("Current total bill: Rs" + bill);
 
   let more = prompt("Do you want to order more? (yes/no)").toLowerCase();
   if (more != "yes") 
